@@ -30,10 +30,13 @@
 		{
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtTelegrama = new System.Windows.Forms.TextBox();
-			this.cbUrgente = new System.Windows.Forms.CheckBox();
 			this.txtPrecio = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.bCalcular = new System.Windows.Forms.Button();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.rbOrdinario = new System.Windows.Forms.RadioButton();
+			this.rbUrgente = new System.Windows.Forms.RadioButton();
+			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -53,17 +56,6 @@
 			this.txtTelegrama.Name = "txtTelegrama";
 			this.txtTelegrama.Size = new System.Drawing.Size(353, 215);
 			this.txtTelegrama.TabIndex = 1;
-			// 
-			// cbUrgente
-			// 
-			this.cbUrgente.AutoSize = true;
-			this.cbUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cbUrgente.Location = new System.Drawing.Point(55, 321);
-			this.cbUrgente.Name = "cbUrgente";
-			this.cbUrgente.Size = new System.Drawing.Size(78, 17);
-			this.cbUrgente.TabIndex = 2;
-			this.cbUrgente.Text = "Urgente?";
-			this.cbUrgente.UseVisualStyleBackColor = true;
 			// 
 			// txtPrecio
 			// 
@@ -93,19 +85,55 @@
 			this.bCalcular.UseVisualStyleBackColor = true;
 			this.bCalcular.Click += new System.EventHandler(this.bCalcular_Click);
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.rbUrgente);
+			this.groupBox1.Controls.Add(this.rbOrdinario);
+			this.groupBox1.Location = new System.Drawing.Point(69, 280);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(299, 35);
+			this.groupBox1.TabIndex = 6;
+			this.groupBox1.TabStop = false;
+			// 
+			// rbOrdinario
+			// 
+			this.rbOrdinario.AutoSize = true;
+			this.rbOrdinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.rbOrdinario.Location = new System.Drawing.Point(12, 12);
+			this.rbOrdinario.Name = "rbOrdinario";
+			this.rbOrdinario.Size = new System.Drawing.Size(76, 17);
+			this.rbOrdinario.TabIndex = 0;
+			this.rbOrdinario.TabStop = true;
+			this.rbOrdinario.Text = "Ordinario";
+			this.rbOrdinario.UseVisualStyleBackColor = true;
+			// 
+			// rbUrgente
+			// 
+			this.rbUrgente.AutoSize = true;
+			this.rbUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.rbUrgente.Location = new System.Drawing.Point(131, 12);
+			this.rbUrgente.Name = "rbUrgente";
+			this.rbUrgente.Size = new System.Drawing.Size(70, 17);
+			this.rbUrgente.TabIndex = 1;
+			this.rbUrgente.TabStop = true;
+			this.rbUrgente.Text = "Urgente";
+			this.rbUrgente.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.bCalcular);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtPrecio);
-			this.Controls.Add(this.cbUrgente);
 			this.Controls.Add(this.txtTelegrama);
 			this.Controls.Add(this.label1);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -115,10 +143,12 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtTelegrama;
-		private System.Windows.Forms.CheckBox cbUrgente;
 		private System.Windows.Forms.TextBox txtPrecio;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button bCalcular;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.RadioButton rbUrgente;
+		private System.Windows.Forms.RadioButton rbOrdinario;
 	}
 }
 
